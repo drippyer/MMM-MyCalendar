@@ -501,7 +501,7 @@ Module.register("MMM-MyCalendar", {
 		for (url in this.calendarData) {
 			var calendar = this.calendarData[url];
 			for (e in calendar) {
-				var event = cloneObject(calendar[e]);
+				const event = structuredClone(calendar[e]);
 				delete event.url;
 				eventList.push(event);
 			}
