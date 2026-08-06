@@ -9,6 +9,7 @@
  * @external Moment
  */
 const moment = require("moment");
+require("moment-timezone");
 const path = require("path");
 const zoneTable = require(path.join(__dirname, "windowsZones.json"));
 const Log = require("../../js/logger.js");
